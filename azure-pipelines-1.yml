@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  name: default2   # dùng agent pool tự host của bạn
+
+steps:
+- script: echo "Hello from self-hosted agent!"
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo "Add other tasks to build, test, and deploy your project."
+    echo "See https://aka.ms/yaml"
+  displayName: 'Run a multi-line script'
+
